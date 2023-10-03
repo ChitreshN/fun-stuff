@@ -8,12 +8,26 @@
 
 VM vm;
 
-void initVM(){
+static void resetStack() {
+    vm.stacktop = vm.stack;
+}
 
+void initVM(){
+    resetStack();
 }
 
 void freeVM(){
 
+}
+
+void push(Value value){
+    *vm.stacktop = value;
+    vm.stacktop++ ;
+}
+
+Value pop(){
+    vm.stacktop--;
+    return *vm.stacktop;
 }
 
 static IntrepretResult run(){
