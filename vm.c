@@ -22,8 +22,9 @@ static IntrepretResult run(){
     for(;;){
         uint8_t instuction;
         switch (instuction = READ_BYTE()) {
-            case OP_RETURN:
-                return INTERPRET_OK;
+            case OP_RETURN:{
+                               return INTERPRET_OK;
+                           }
             case OP_CONSTANT:{
                                  Value constant = READ_CONSTANT();
                                  printValue(constant);
