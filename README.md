@@ -16,3 +16,13 @@
 1. Implement debug functionality for the VM stack
 2. Add push to the constant case instruction
 3. And pop while returning
+
+## 15.3
+1. Add arithematic operators to the vm
+
+
+### Design docs
+* Another possible imlplementation is register based vm
+* They are much more efficient since we can directly
+  load and store values instead of repeatedly pushing
+  and popping
