@@ -57,6 +57,10 @@ static IntrepretResult run(){
                                  push(constant);
                                  break;
                              }
+            case OP_NEGATE: {
+                                push(-(pop()));
+                                break;
+                            }
         }
     }
 #undef READ_BYTE
