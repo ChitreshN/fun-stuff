@@ -26,3 +26,24 @@
 * They are much more efficient since we can directly
   load and store values instead of repeatedly pushing
   and popping
+
+
+## 16
+
+1. Here we start implementing the lexical part of the compiler
+2. We cahnge the siganture of interpret function to acept strings
+
+## 16.1.2
+
+1. Start implementation of scanner
+2. has fields start, current and line
+
+## 16.2
+
+1. Here we scan a token only when the compiler needs one
+2. Implement token type to contain the necessary values
+
+## 16.3
+
+1. Add enum to hold possible tokens
+2. And make the scanner return the appropriate token
